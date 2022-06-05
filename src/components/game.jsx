@@ -1,12 +1,12 @@
-import React from "react";
+import React, { Component } from "react";
 
-class Square extends React.Component {
+class Square extends Component {
   render() {
     return <button className="square">{/* TODO */}</button>;
   }
 }
 
-class Board extends React.Component {
+class Board extends Component {
   renderSquare(i) {
     return <Square />;
   }
@@ -37,7 +37,7 @@ class Board extends React.Component {
   }
 }
 
-class Game extends React.Component {
+class Game extends Component {
   render() {
     return (
       <div className="game">
