@@ -2,13 +2,17 @@ import React, { Component } from "react";
 
 class Square extends Component {
   render() {
-    return <button className="square">{/* TODO */}</button>;
+    return (
+      <button className="btn btn-secondary btn-big m-1">
+        {this.props.value}
+      </button>
+    );
   }
 }
 
 class Board extends Component {
   renderSquare(i) {
-    return <Square />;
+    return <Square value={i} />;
   }
 
   render() {
