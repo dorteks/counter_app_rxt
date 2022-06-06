@@ -1,9 +1,21 @@
 import React, { Component } from "react";
 
 class Square extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: null,
+    };
+  }
+
   render() {
     return (
-      <button className="btn btn-secondary btn-big m-1">
+      <button
+        className="btn btn-primary btn-big m-1"
+        onClick={() => {
+          console.log("you clicked a box");
+        }}
+      >
         {this.props.value}
       </button>
     );
