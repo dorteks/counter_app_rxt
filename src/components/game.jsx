@@ -1,16 +1,24 @@
 import React, { Component } from "react";
 
-class Square extends Component {
-  render() {
-    return (
-      <button
-        className="btn btn-primary btn-big m-1"
-        onClick={() => this.props.onClick()}
-      >
-        {this.props.value}
-      </button>
-    );
-  }
+// class Square extends Component {
+//   render() {
+//     return (
+//       <button
+//         className="btn btn-primary btn-big m-1"
+//         onClick={() => this.props.onClick()}
+//       >
+//         {this.props.value}
+//       </button>
+//     );
+//   }
+// }
+
+function Square(props) {
+  return (
+    <button className="btn btn-primary btn-big m-1" onClick={props.onClick}>
+      {props.value}
+    </button>
+  );
 }
 
 class Board extends Component {
