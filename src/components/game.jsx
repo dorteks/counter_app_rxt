@@ -13,6 +13,8 @@ import React, { Component } from "react";
 //   }
 // }
 
+// turning square class into function
+
 function Square(props) {
   return (
     <button className="btn btn-primary btn-big m-1" onClick={props.onClick}>

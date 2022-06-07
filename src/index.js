@@ -4,10 +4,10 @@ import "./index.css";
 // import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Game from "./components/game";
+import Games from "./components/games";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Game />);
+root.render(<Games />);
 
 //shot myself in the leg big time
 // If you want to start measuring performance in your app, pass a function
