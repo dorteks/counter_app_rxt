@@ -28,14 +28,19 @@ class Counters extends Component {
   render() {
     return (
       <div>
+        {/* reset button */}
+        <button btn btn-primary btn-smaall m-3>
+          Reset
+        </button>
         {this.state.counters.map((counter) => (
           <Counter
             key={counter.id}
             onDelete={this.handleDelete}
             value={counter.value}
             id={counter.id}
+            onReset={this.handleReset}
           >
-            <h4>Counter #{counter.id}</h4>
+            <h4>Item #{counter.id}</h4>
           </Counter>
         ))}
       </div>
